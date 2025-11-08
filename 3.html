@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าของฉัน (ขาย)</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5; 
+        }
+        
+        
+        header {
+            background-color: #007bff; 
+            color: white;
+            padding: 10px 20px;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+       
+        nav {
+            background-color: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto; 
+        }
+
+        
+        .main-slideshow {
+            background-color: #e9e9e9;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 28px;
+            color: #555;
+            background-image: url('https://img.advice.co.th/cdn-cgi/image/width=1920,height=572,quality=100,fit=cover/images_nas/banner/advice_home_1761364296_1.jpg'); /* รูปจำลอง */
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .product-grid {
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+        }
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product-item h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product-item .price {
+            color: #d00;
+            font-weight: bold;
+            font-size: 18px;
+        }
+         section { padding: 20px; }
+        footer { background-color: #004080; color: white; text-align: center; padding: 10px; }
+        
+        button {
+            width: 35%;
+            padding: 1px;
+            background-color: #0056b3; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ร้านค้าของฉัน</div>
+        <div class="search-bar">
+            <input type="text" placeholder="ค้นหาสินค้า, แบรนด์, ฯลฯ">
+            <button>ค้นหา</button>
+        </div>
+        <div>
+           <button onclick="window.location.href='in.html'"></buttonbutton>เข้าสู่ระบบ</button>  | <button onclick="window.location.href='older.html'"></buttonbutton>ตะกร้าสินค้า</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">หมวดหมู่ทั้งหมด</a>
+        <a href="#">โปรโมชั่น</a>
+        <a href="#">สินค้า</a>
+        <a href="#">บริการหลังการขาย</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="main-slideshow">
+            <p> </p>
+            </section>
+
+        <h2>🔥 สินค้าโปรโมชั่น</h2>
+        <section class="product-grid">
+            
+            <article class="product-item">
+                 <a href="details.html">
+                <img src="https://api.melonth.com/upload/iPhone-1721378436.jpeg"alt="" srcset="" width="480x" height="480px">
+                </a> 
+                <h3>สมาร์ทโฟน รุ่นใหม่</h3>
+                <p class="price">40,900 บาท</p>
+            </article>
+            
+
+            <article class="product-item">
+                <img src="https://th.store.asus.com/media/catalog/product/d/3/d3607ha-rp788wa_1_edit.jpg?width=800&height=800&store=th_TH&image-type=image"alt="" srcset="" width="480px" height="480px">
+                <h3>โน้ตบุ๊กทำงาน</h3>
+                <p class="price">25,500 บาท</p>
+            </article>
+
+            <article class="product-item">
+                <img src="https://www.jib.co.th/img_master/product/original/2025032714380175526_1.jpg"alt="" srcset="" width="480px" height="480px">
+                <h3>การ์ดจอ RTX 5090</h3>
+                <p class="price">45,000 บาท</p>
+            </article>
+
+            <article class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboAN2bZXZfyh9-TZh7xmjRwNZvT-zZJsfvw&s"alt="" srcset="" width="480px" height="480px">
+                <h3>เมาส์เกมมิ่ง</h3>
+                <p class="price">5,290 บาท</p>
+            </article>
+
+        </section>
+    </div>
+
+</body>
+</section>
+    <section class="contact">
+        <h2>ติดต่อเรา</h2>
+        <p>โทร: 02-123-4567</p>
+        <p>อีเมล: info@xxxx.xz</p>
+        <p>ที่อยู่: ถนนตัวอย่าง แขวงตัวอย่าง เขตตัวอย่าง กรุงเทพมหานคร</p>
+    </section>
+    <footer>
+        <p>&copy; 
+
+</html>

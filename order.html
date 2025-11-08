@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าของฉัน</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: white;
+        }
+        .product-list {
+            display: flex; 
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .order-form {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; 
+        }
+         .buy-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #0056b3; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none; 
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛒 ร้านค้าของฉัน </h1>
+    </header>
+
+    <main>
+        
+        </section>
+
+        <section class="order-form">
+            <h2>📝 แบบฟอร์มสั่งซื้อสินค้า</h2>
+            
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="customer-name">ชื่อ-นามสกุล:</label>
+                    <input type="text" id="customer-name" name="customer_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-email">อีเมล:</label>
+                    <input type="email" id="customer-email" name="customer_email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-address">ที่อยู่สำหรับจัดส่ง:</label>
+                    <textarea id="customer-address" name="customer_address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-select">เลือกสินค้า:</label>
+                    <select id="product-select" name="product">
+                        <option value="p1">สมาร์ทโฟน รุ่นใหม่ (40,900 บาท)</option>
+                        <option value="p2">โน้ตบุ๊กทำงาน (25,500 บาท)</option>
+                        <option value="p3">การ์ดจอ RTX 5090 (45,000 บาท)</option>
+                        <option value="p4">เมาส์เกมมิ่ง (5,290 บาท)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">จำนวน:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                </div>
+
+                <button class="buy-button" type="submit">ยืนยันการสั่งซื้อ</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ร้านค้าออนไลน์ของฉัน</p>
+    </footer>
+
+</body>
+</html>
